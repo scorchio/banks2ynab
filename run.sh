@@ -1,4 +1,5 @@
 . virtualenv/bin/activate
 
-cat source.csv | ./tsv2csv.py > source.real.csv # dammit KH, TSV != CSV
-rm output.ofx && ./virtualenv/bin/csv2ofx --verbose -m kh source.real.csv output.ofx
+cat source.csv | python3 ./tsv2csv.py > source.real.csv # dammit KH, TSV != CSV
+rm output.ofx 2> /dev/null || echo > /dev/null
+./virtualenv/bin/csv2ofx -m kh source.real.csv output.ofx
