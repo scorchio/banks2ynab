@@ -1,0 +1,7 @@
+virtualenv/
+.vscode
+.DS_Store
+source.csv
+source.real.csv
+output.ofx
+
