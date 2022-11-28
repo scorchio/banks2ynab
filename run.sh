@@ -1,3 +1,6 @@
+#!/bin/bash
+set -euxo pipefail
+
 . virtualenv/bin/activate
 
 cat source.csv | python3 ./tsv2csv.py > source.real.csv # dammit KH, TSV != CSV
