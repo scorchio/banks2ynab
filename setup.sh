@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euxo pipefail
 
-virtualenv -p python virtualenv
+python -m venv virtualenv
 
 . virtualenv/bin/activate
 pip install pkutils==0.13.6
