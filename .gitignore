@@ -1,7 +1,8 @@
-virtualenv/
 .vscode
 .DS_Store
 source.csv
+source-wise.csv
 source.real.csv
 output.ofx
+output-wise.ofx
 
